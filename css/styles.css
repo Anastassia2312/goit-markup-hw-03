@@ -60,8 +60,6 @@ h3 {
 .page-header {
   display: flex;
   background-color: #fff;
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid var(--cornflower);
 }
 
@@ -98,6 +96,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .navigation-list .list-link {
@@ -130,7 +130,7 @@ h3 {
 
 .address-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .address .list-link:focus,
@@ -152,7 +152,7 @@ h3 {
 
 .hero-title {
   margin: 0 auto;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
 
   font-family: 'Roboto', sans-serif;
@@ -167,6 +167,7 @@ h3 {
 .hero-button {
   display: block;
   margin: 0 auto;
+  min-width: 169px;
   border-radius: 4px;
   padding: 16px 32px;
   border: none;
@@ -189,7 +190,7 @@ h3 {
 /*Benefits*/
 .benefits-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   margin: 0 auto;
 }
 
@@ -197,7 +198,6 @@ h3 {
   display: inline-flex;
   flex-direction: column;
   width: 264px;
-  row-gap: 8px;
 }
 
 .benefits-main-title {
@@ -223,6 +223,8 @@ h3 {
 }
 
 .benefits-title {
+  margin-bottom: 8px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -255,7 +257,7 @@ h3 {
 
 .team-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .team-list-item {
@@ -274,14 +276,15 @@ h3 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  row-gap: 8px;
 }
 
-.team-member-img {
-  padding-bottom: 32px;
+.team-member-content {
+  padding: 32px 0;
 }
 
 .team-member {
+  text-align: center;
+  margin-bottom: 8px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -291,6 +294,7 @@ h3 {
 }
 
 .team-member-text {
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -321,13 +325,13 @@ h3 {
   display: inline-flex;
   flex-direction: column;
   background-color: var(--main-white);
-  border: 1px solid var(--cornflower);
 
-  width: calc((100%-2 * 24px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-content {
   padding: 32px 16px;
+  border: 1px solid var(--cornflower);
 }
 .portfolio-title {
   font-family: 'Roboto', sans-serif;
@@ -335,6 +339,7 @@ h3 {
   font-size: 20px;
   letter-spacing: 0.02em;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -356,6 +361,10 @@ h3 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
-  width: 264px;
-  margin-top: 16px;
+  max-width: 264px;
+}
+
+.logo-studio-footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
