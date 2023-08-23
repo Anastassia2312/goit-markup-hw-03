@@ -92,7 +92,7 @@ h3 {
   margin-right: auto;
 }
 
-.navigation-list-item {
+.navigation-list-item .list-link {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -371,4 +371,12 @@ h3 {
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
+
+  text-transform: uppercase;
+  font-family: var(--accent-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-brand-color);
 }
